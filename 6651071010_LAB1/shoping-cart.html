@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giỏ Hàng - 6651071010_LAB1 | Ngô Thuận Dương</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row" style="align-items: center;">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa-solid fa-envelope"></i> ngothuanduong.6651071010@utc.edu.vn</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Miễn phí vận chuyển cho đơn hàng từ 200.000 ₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="shoping-cart.html"><i class="fa-solid fa-user"></i> Ngô Thuận Dương (6651071010)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 20px;">
+      <div class="row" style="align-items: center;">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="index.html">
+              <i class="fa-solid fa-bolt"></i>
+              <span>SPORTS</span>SHOP
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li class="active">
+                <a href="#">Trang <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Tin Tức</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Tin Tức</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span>0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>0 ₫</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>GIỎ HÀNG THỂ THAO</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <span>Giỏ Hàng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoping Cart Section -->
+  <section class="shoping-cart spad" style="padding-bottom: 80px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="shoping__cart__table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="shoping__product">Sản Phẩm</th>
+                  <th>Đơn Giá</th>
+                  <th>Số Lượng</th>
+                  <th>Thành Tiền</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Items populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="shoping__cart__btns" style="display: flex; justify-content: space-between; margin-bottom: 40px;">
+            <a href="shop-grid.html" class="primary-btn cart-btn" style="background: #f5f5f5; color: #1c1c1c; border: 1px solid #e1e1e1;">
+              <i class="fa-solid fa-arrow-left"></i> TIẾP TỤC MUA SẮM
+            </a>
+            <a href="javascript:void(0)" onclick="renderShoppingCartPage()" class="primary-btn cart-btn" style="background: #f5f5f5; color: #1c1c1c; border: 1px solid #e1e1e1;">
+              <i class="fa-solid fa-arrows-rotate"></i> CẬP NHẬT GIỎ HÀNG
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__discount">
+            <h5>Mã Giảm Giá Khuyến Mãi (Voucher)</h5>
+            <form onsubmit="applyCoupon(); return false;" style="display: flex; margin-top: 15px;">
+              <input type="text" placeholder="Nhập SPORTS10 hoặc FREESHIP" style="text-transform: uppercase;">
+              <button type="submit" class="site-btn">ÁP DỤNG</button>
+            </form>
+            <div style="font-size: 13px; color: #888; margin-top: 8px;">
+              * Gợi ý mã có sẵn: <strong>SPORTS10</strong> (giảm 10%), <strong>FREESHIP</strong> (giảm 30.000 ₫), <strong>SALE50K</strong> (giảm 50.000 ₫)
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__checkout">
+            <h5>Tổng Giỏ Hàng</h5>
+            <ul>
+              <li>Tạm tính <span>0 ₫</span></li>
+              <li>Tổng thanh toán <span>0 ₫</span></li>
+            </ul>
+            <a href="checkout.html" class="primary-btn">TIẾN HÀNH THANH TOÁN (PROCEED TO CHECKOUT)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html" style="font-size: 26px; font-weight: 900; color: #1c1c1c;">
+                <i class="fa-solid fa-bolt" style="color: var(--primary);"></i>
+                <span style="color: var(--primary);">SPORTS</span>SHOP
+              </a>
+            </div>
+            <ul>
+              <li>Địa chỉ: Tòa nhà Thể Thao Pro, Quận 1, TP.HCM</li>
+              <li>Hotline: 0901.234.567</li>
+              <li>Email: ngothuanduong.6651071010@utc.edu.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+              <li><a href="checkout.html">Thanh Toán</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Đăng Ký Bản Tin</h6>
+            <p>Nhận thông báo ưu đãi và các dòng giày thể thao mới nhất.</p>
+            <form onsubmit="alert('Đăng ký thành công!'); return false;">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div>Copyright &copy; 2026 | Bài Thực Hành LAB 1-2 môn Thiết Kế Web</div>
+            <div>Sinh viên: <strong>Ngô Thuận Dương</strong> - MSSV: <strong>6651071010</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tin Tức Thể Thao - 6651071010_LAB1 | Ngô Thuận Dương</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row" style="align-items: center;">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa-solid fa-envelope"></i> ngothuanduong.6651071010@utc.edu.vn</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Miễn phí vận chuyển cho đơn hàng từ 200.000 ₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="shoping-cart.html"><i class="fa-solid fa-user"></i> Ngô Thuận Dương (6651071010)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 20px;">
+      <div class="row" style="align-items: center;">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="index.html">
+              <i class="fa-solid fa-bolt"></i>
+              <span>SPORTS</span>SHOP
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li>
+                <a href="#">Trang <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Tin Tức</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="blog.html">Tin Tức</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span>0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>0 ₫</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>TIN TỨC THỂ THAO</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <span>Tin Tức</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog spad" style="padding-bottom: 70px;">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-lg-4 col-md-5">
+          <div class="blog__sidebar">
+            <div class="blog__sidebar__search" style="margin-bottom: 35px;">
+              <form action="#" style="position: relative;">
+                <input type="text" placeholder="Tìm kiếm bài viết..." style="width: 100%; height: 46px; border: 1px solid #e1e1e1; padding-left: 15px; border-radius: 4px;">
+                <button type="submit" style="position: absolute; right: 0; top: 0; height: 46px; width: 46px; background: var(--primary); color: #fff; border: none; cursor: pointer; border-radius: 0 4px 4px 0;"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+
+            <div class="blog__sidebar__item" style="margin-bottom: 35px;">
+              <h4 style="font-weight: 700; color: #1c1c1c; margin-bottom: 20px;">Chuyên Mục</h4>
+              <ul style="font-size: 15px; line-height: 38px;">
+                <li><a href="blog.html">Tất Cả (20)</a></li>
+                <li><a href="blog.html">Kỹ Thuật Chạy Bộ (8)</a></li>
+                <li><a href="blog.html">Giáo Án Tập Gym (6)</a></li>
+                <li><a href="blog.html">Kinh Nghiệm Đá Bóng (4)</a></li>
+                <li><a href="blog.html">Dinh Dưỡng Thể Thao (5)</a></li>
+              </ul>
+            </div>
+
+            <div class="blog__sidebar__item">
+              <h4 style="font-weight: 700; color: #1c1c1c; margin-bottom: 20px;">Bài Viết Mới Nhất</h4>
+              <div class="blog__sidebar__recent">
+                <a href="blog-details.html" style="display: flex; gap: 12px; margin-bottom: 15px;">
+                  <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=150&auto=format&fit=crop&q=80" style="width: 70px; height: 70px; object-fit: cover; border-radius: 4px;">
+                  <div>
+                    <h6 style="color: #1c1c1c; font-size: 14px; font-weight: 700; line-height: 1.4;">5 Mẹo Chọn Giày Chạy Bộ Phù Hợp</h6>
+                    <small style="color: #888;">27/10/2026</small>
+                  </div>
+                </a>
+                <a href="blog-details.html" style="display: flex; gap: 12px; margin-bottom: 15px;">
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=150&auto=format&fit=crop&q=80" style="width: 70px; height: 70px; object-fit: cover; border-radius: 4px;">
+                  <div>
+                    <h6 style="color: #1c1c1c; font-size: 14px; font-weight: 700; line-height: 1.4;">Lịch Tập Gym Tăng Cơ Cho Người Mới</h6>
+                    <small style="color: #888;">25/10/2026</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Blog Grid -->
+        <div class="col-lg-8 col-md-7">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="blog__item">
+                <div class="blog__item__pic">
+                  <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&auto=format&fit=crop&q=80" alt="Blog 1">
+                </div>
+                <div class="blog__item__text">
+                  <ul>
+                    <li><i class="fa-regular fa-calendar"></i> 27/10/2026</li>
+                    <li><i class="fa-regular fa-comment"></i> 5</li>
+                  </ul>
+                  <h5><a href="blog-details.html">5 Mẹo Chọn Giày Chạy Bộ Phù Hợp Bàn Chân</a></h5>
+                  <p>Hướng dẫn chi tiết cách kiểm tra bàn chân sấp hay ngửa để chọn đệm giày phù hợp nhất khi chạy cự ly dài.</p>
+                  <a href="blog-details.html" class="blog__btn" style="color: var(--primary); font-weight: 700;">ĐỌC TIẾP <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="blog__item">
+                <div class="blog__item__pic">
+                  <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80" alt="Blog 2">
+                </div>
+                <div class="blog__item__text">
+                  <ul>
+                    <li><i class="fa-regular fa-calendar"></i> 25/10/2026</li>
+                    <li><i class="fa-regular fa-comment"></i> 8</li>
+                  </ul>
+                  <h5><a href="blog-details.html">Lịch Tập Gym Tăng Cơ Cho Người Mới Bắt Đầu</a></h5>
+                  <p>Giáo án đẩy kéo chân (Push-Pull-Legs) khoa học giúp phát triển cơ bắp toàn diện và hạn chế chấn thương.</p>
+                  <a href="blog-details.html" class="blog__btn" style="color: var(--primary); font-weight: 700;">ĐỌC TIẾP <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="blog__item">
+                <div class="blog__item__pic">
+                  <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&auto=format&fit=crop&q=80" alt="Blog 3">
+                </div>
+                <div class="blog__item__text">
+                  <ul>
+                    <li><i class="fa-regular fa-calendar"></i> 20/10/2026</li>
+                    <li><i class="fa-regular fa-comment"></i> 12</li>
+                  </ul>
+                  <h5><a href="blog-details.html">Kỹ Thuật Đập Cầu Lông Uy Lực Chuẩn VĐV</a></h5>
+                  <p>Bật nhảy smash cầu cắm sân với điểm tiếp xúc cao nhất, tối ưu lực cổ tay và chuyển trọng tâm cơ thể.</p>
+                  <a href="blog-details.html" class="blog__btn" style="color: var(--primary); font-weight: 700;">ĐỌC TIẾP <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="blog__item">
+                <div class="blog__item__pic">
+                  <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&auto=format&fit=crop&q=80" alt="Blog 4">
+                </div>
+                <div class="blog__item__text">
+                  <ul>
+                    <li><i class="fa-regular fa-calendar"></i> 18/10/2026</li>
+                    <li><i class="fa-regular fa-comment"></i> 4</li>
+                  </ul>
+                  <h5><a href="blog-details.html">Bí Quyết Giữ Thể Lực Suốt 90 Phút Trận Bóng</a></h5>
+                  <p>Chiến thuật phân bổ sức bền, bổ sung điện giải và nước lọc trong từng hiệp đấu bóng đá phong trào.</p>
+                  <a href="blog-details.html" class="blog__btn" style="color: var(--primary); font-weight: 700;">ĐỌC TIẾP <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="product__pagination" style="text-align: left; margin-top: 10px;">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html" style="font-size: 26px; font-weight: 900; color: #1c1c1c;">
+                <i class="fa-solid fa-bolt" style="color: var(--primary);"></i>
+                <span style="color: var(--primary);">SPORTS</span>SHOP
+              </a>
+            </div>
+            <ul>
+              <li>Địa chỉ: Tòa nhà Thể Thao Pro, Quận 1, TP.HCM</li>
+              <li>Hotline: 0901.234.567</li>
+              <li>Email: ngothuanduong.6651071010@utc.edu.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+              <li><a href="checkout.html">Thanh Toán</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Đăng Ký Bản Tin</h6>
+            <p>Nhận thông báo ưu đãi và các dòng giày thể thao mới nhất.</p>
+            <form onsubmit="alert('Đăng ký thành công!'); return false;">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div>Copyright &copy; 2026 | Bài Thực Hành LAB 1-2 môn Thiết Kế Web</div>
+            <div>Sinh viên: <strong>Ngô Thuận Dương</strong> - MSSV: <strong>6651071010</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

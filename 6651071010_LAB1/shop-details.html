@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Tiết Sản Phẩm - 6651071010_LAB1 | Ngô Thuận Dương</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row" style="align-items: center;">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa-solid fa-envelope"></i> ngothuanduong.6651071010@utc.edu.vn</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Miễn phí vận chuyển cho đơn hàng từ 200.000 ₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="shoping-cart.html"><i class="fa-solid fa-user"></i> Ngô Thuận Dương (6651071010)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top: 20px;">
+      <div class="row" style="align-items: center;">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="index.html">
+              <i class="fa-solid fa-bolt"></i>
+              <span>SPORTS</span>SHOP
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li class="active">
+                <a href="#">Trang <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Tin Tức</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Tin Tức</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span>0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>0 ₫</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>CHI TIẾT SẢN PHẨM</h2>
+            <div class="breadcrumb__option">
+              <a href="index.html">Trang Chủ</a>
+              <a id="detail-bc-cat" href="shop-grid.html">Chạy Bộ</a>
+              <span id="detail-bc-title">Nike Air Zoom Pegasus 40</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details Section -->
+  <section class="product-details spad" style="padding-bottom: 70px;">
+    <div class="container">
+      <div class="row">
+        <!-- Gallery Left -->
+        <div class="col-lg-6 col-md-6">
+          <div class="product__details__pic">
+            <div class="product__details__pic__item">
+              <img id="detail-main-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" onerror="this.onerror=null; this.src='Images/product-1.svg';" alt="Chi Tiết Sản Phẩm">
+            </div>
+            <div id="detail-thumbs" class="product__details__pic__slider">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&auto=format&fit=crop&q=80" class="active" alt="Thumb 1">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&auto=format&fit=crop&q=80" alt="Thumb 2">
+              <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=80" alt="Thumb 3">
+              <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=800&auto=format&fit=crop&q=80" alt="Thumb 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Right -->
+        <div class="col-lg-6 col-md-6">
+          <div class="product__details__text">
+            <h3 id="detail-title">Giày Chạy Bộ Nike Air Zoom Pegasus 40</h3>
+            <div id="detail-rating" class="product__details__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(50 đánh giá của khách hàng)</span>
+            </div>
+            <div id="detail-price" class="product__details__price">3.290.000 ₫</div>
+            <p id="detail-desc">
+              Dòng giày chạy biểu tượng suốt 4 thập kỷ của Nike. Công nghệ đệm khí kép Zoom Air kết hợp bọt React siêu êm ái, mang lại độ nảy tối đa cho cự ly từ 5km đến marathon 42km.
+            </p>
+
+            <!-- Chọn Size & Màu -->
+            <div style="margin-bottom: 20px;">
+              <div style="font-weight: 700; margin-bottom: 8px; color: var(--heading-color);">Kích cỡ (Size):</div>
+              <div id="detail-sizes" style="display: flex; gap: 8px;">
+                <button type="button" class="sidebar__item__size" style="border:none; background:none;"><label class="active">40</label></button>
+                <button type="button" class="sidebar__item__size" style="border:none; background:none;"><label>41</label></button>
+                <button type="button" class="sidebar__item__size" style="border:none; background:none;"><label>42</label></button>
+                <button type="button" class="sidebar__item__size" style="border:none; background:none;"><label>43</label></button>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <div style="font-weight: 700; margin-bottom: 8px; color: var(--heading-color);">Màu sắc:</div>
+              <div id="detail-colors" style="display: flex; gap: 8px;">
+                <button type="button" class="sidebar__item__color" style="border:none; background:none;"><label class="active">Đỏ Đen</label></button>
+                <button type="button" class="sidebar__item__color" style="border:none; background:none;"><label>Trắng Xám</label></button>
+              </div>
+            </div>
+
+            <!-- Quantity & Add to Cart -->
+            <div class="product__details__quantity">
+              <div class="quantity">
+                <div class="pro-qty">
+                  <span class="dec qtybtn">-</span>
+                  <input type="text" id="detail-qty" value="1" readonly>
+                  <span class="inc qtybtn">+</span>
+                </div>
+              </div>
+              <button id="detail-add-btn" type="button" class="primary-btn" style="height: 48px; font-weight: 800;">
+                <i class="fa-solid fa-cart-shopping"></i> THÊM VÀO GIỎ HÀNG
+              </button>
+              <a id="detail-wish-btn" href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+            </div>
+
+            <!-- Details Widget List -->
+            <div class="product__details__widget">
+              <ul>
+                <li><b>Tình trạng kho:</b> <span id="detail-stock" style="color: var(--primary); font-weight: 700;">Còn hàng (25 sản phẩm)</span></li>
+                <li><b>Giao hàng:</b> <span>1 - 2 ngày làm việc (Nội thành hỏa tốc 2h)</span></li>
+                <li><b>Trọng lượng:</b> <span id="detail-weight">288g (Size 42)</span></li>
+                <li><b>Mã phân loại SKU:</b> <span id="detail-sku">NK-PEG40-RED-42</span></li>
+                <li><b>Chia sẻ:</b>
+                  <div class="share" style="display: inline-block; margin-left: 10px;">
+                    <a href="#" style="margin-right: 12px; color: #1c1c1c;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" style="margin-right: 12px; color: #1c1c1c;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" style="margin-right: 12px; color: #1c1c1c;"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="col-lg-12">
+          <div class="product__details__tab">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tabs-1">Mô Tả Sản Phẩm</a></li>
+              <li><a href="#tabs-2">Thông Số Kỹ Thuật</a></li>
+              <li><a href="#tabs-3">Đánh Giá</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tabs-1">
+                <div id="detail-tab-desc" class="product__details__tab__desc">
+                  <h6>Thông tin chi tiết</h6>
+                  <p>
+                    Nike Air Zoom Pegasus 40 tiếp tục truyền thống là mẫu giày chạy bộ "ngựa chiến" đáng tin cậy nhất mọi thời đại. Được thiết kế với form ôm chân cải tiến, đệm lót mắt cá chân êm ái và vùng đệm ngón chân thông thoáng, giúp bạn tự tin hoàn thành mọi buổi tập từ chạy cự ly ngắn hàng ngày đến đường chạy bán marathon 21km và full marathon 42km.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-2">
+                <div id="detail-tab-specs" class="product__details__tab__desc">
+                  <h6>Thông số kỹ thuật sản phẩm</h6>
+                  <p>
+                    • Thương hiệu: Nike (Chính hãng 100%)<br>
+                    • Công nghệ đệm: Double Zoom Air Unit (Gót và Mũi chân) + Nike React Foam<br>
+                    • Chất liệu thân giày: Vải dệt Engineered Mesh đa lớp<br>
+                    • Đế ngoài: Cao su đúc nguyên khối mô hình Waffle chống mài mòn<br>
+                    • Xuất xứ: Gia công tại Việt Nam chuẩn xuất khẩu quốc tế
+                  </p>
+                </div>
+              </div>
+              <div class="tab-pane" id="tabs-3">
+                <div id="detail-tab-reviews" class="product__details__tab__desc">
+                  <h6>Đánh giá từ khách hàng</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="col-lg-12">
+          <div class="section-title related__product__title" style="margin-top: 30px;">
+            <h2>Sản Phẩm Cùng Loại</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="detail-related-row" class="row">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html" style="font-size: 26px; font-weight: 900; color: #1c1c1c;">
+                <i class="fa-solid fa-bolt" style="color: var(--primary);"></i>
+                <span style="color: var(--primary);">SPORTS</span>SHOP
+              </a>
+            </div>
+            <ul>
+              <li>Địa chỉ: Tòa nhà Thể Thao Pro, Quận 1, TP.HCM</li>
+              <li>Hotline: 0901.234.567</li>
+              <li>Email: ngothuanduong.6651071010@utc.edu.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Liên Kết Nhanh</h6>
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+              <li><a href="checkout.html">Thanh Toán</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Đăng Ký Bản Tin</h6>
+            <p>Nhận thông báo ưu đãi và các dòng giày thể thao mới nhất.</p>
+            <form onsubmit="alert('Đăng ký thành công!'); return false;">
+              <input type="email" placeholder="Email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div>Copyright &copy; 2026 | Bài Thực Hành LAB 1-2 môn Thiết Kế Web</div>
+            <div>Sinh viên: <strong>Ngô Thuận Dương</strong> - MSSV: <strong>6651071010</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

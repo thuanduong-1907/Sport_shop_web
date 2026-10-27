@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f0fdf4"/><stop offset="100%" stop-color="#dcfce7"/></linearGradient>
+    <linearGradient id="goldBoot" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#facc15"/><stop offset="100%" stop-color="#ca8a04"/></linearGradient>
+    <filter id="sh7" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg7)" rx="16"/>
+  <ellipse cx="250" cy="385" rx="160" ry="20" fill="#bbf7d0" opacity="0.5"/>
+  <g filter="url(#sh7)">
+    <g fill="#1e293b">
+      <circle cx="110" cy="340" r="5"/><circle cx="130" cy="345" r="5"/><circle cx="160" cy="350" r="5"/>
+      <circle cx="200" cy="352" r="5"/><circle cx="240" cy="352" r="5"/><circle cx="280" cy="350" r="5"/>
+      <circle cx="320" cy="345" r="5"/><circle cx="360" cy="338" r="5"/><circle cx="390" cy="320" r="5"/>
+    </g>
+    <path d="M90,320 C120,338 180,345 250,345 C320,345 380,330 410,290 C405,275 385,270 370,285 C320,305 250,305 180,295 C140,290 100,285 90,320 Z" fill="#1e293b"/>
+    <path d="M95,305 C90,265 125,225 165,205 C205,185 245,150 275,145 C285,175 300,205 345,235 C385,255 410,275 398,290 C370,300 320,305 250,305 C180,305 125,300 95,305 Z" fill="url(#goldBoot)"/>
+    <text x="130" y="260" fill="#0f172a" font-family="sans-serif" font-size="24" font-weight="900" font-style="italic">AIR</text>
+    <path d="M230,260 C280,265 340,240 380,210 C370,225 350,250 310,265 C270,275 240,270 230,260 Z" fill="#0f172a"/>
+  </g>
+  <text x="250" y="440" fill="#0f172a" font-family="sans-serif" font-size="18" font-weight="800" text-anchor="middle">GIÀY ĐÁ BANH NIKE MERCURIAL VAPOR 15 TF</text>
+  <text x="250" y="465" fill="#15803d" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Chuyên Sân Cỏ Nhân Tạo - Đệm Air Zoom</text>
+</svg>

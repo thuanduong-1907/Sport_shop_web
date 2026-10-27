@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm | Ngô Thuận Dương - 6651071010</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <span class="student-info">SV: Ngô Thuận Dương - MSSV: 6651071010</span>
+        <span class="badge-promo">| THIẾT KẾ WEB - LAB 1</span>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">NIKE<span>.SPORT</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="shop.html">Sản Phẩm</a></li>
+            <li><a href="detail.html" class="active">Chi Tiết</a></li>
+            <li><a href="checkout.html">Thanh Toán</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="checkout.html">
+                <button class="cart-btn">Giỏ hàng (<span class="cart-count">0</span>)</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="detail-wrapper">
+            <div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="Nike Alphafly 3" class="detail-img">
+            </div>
+
+            <div>
+                <span style="color:#ff5722; font-weight:bold; font-size:12px; text-transform:uppercase;">Running / Marathon</span>
+                <h1 style="font-size:32px; font-weight:900; margin: 8px 0 16px;">Nike Alphafly 3 Premium</h1>
+                <div style="font-size:26px; font-weight:bold; color:#38bdf8; margin-bottom: 20px;">7.990.000đ</div>
+                
+                <p style="color:#94a3b8; font-size:14px; margin-bottom: 20px;">
+                    Nike Alphafly 3 được tinh chỉnh dành riêng cho các cự ly chạy marathon đỉnh cao. Tích hợp 2 cụm đệm Air Zoom ở bàn chân trước kết hợp đế sợi carbon Flyplate toàn phần mang lại tỷ lệ hoàn trả năng lượng tối đa trên từng km đường trường.
+                </p>
+
+                <label style="font-size:13px; font-weight:bold; color:#f8fafc;">Chọn Size (EU):</label>
+                <div class="size-selector">
+                    <button type="button" class="size-btn active">40</button>
+                    <button type="button" class="size-btn">41</button>
+                    <button type="button" class="size-btn">42</button>
+                    <button type="button" class="size-btn">43</button>
+                </div>
+
+                <div style="display:flex; gap:15px;">
+                    <button class="btn-primary" onclick="addToCart(1, 'Nike Alphafly 3 Premium', 7990000, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600')">
+                        + Thêm Vào Giỏ Hàng
+                    </button>
+                    <a href="checkout.html" class="btn-primary" style="background:#0f172a; border:1px solid #ff5722; color:#ff5722;" onclick="addToCart(1, 'Nike Alphafly 3 Premium', 7990000, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600')">
+                        Mua Ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>NIKE STORE</h4>
+                <p>Sinh viên: <b>Ngô Thuận Dương</b> - MSSV: <b>6651071010</b></p>
+            </div>
+            <div class="footer-col">
+                <h4>Giáo Viên Hướng Dẫn</h4>
+                <p>GV: Nguyễn Thiện Dương</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>

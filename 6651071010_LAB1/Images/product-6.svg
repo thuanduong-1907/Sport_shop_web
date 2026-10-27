@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fffbeb"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
+    <filter id="sh6" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg6)" rx="16"/>
+  <ellipse cx="250" cy="380" rx="160" ry="22" fill="#fde68a" opacity="0.5"/>
+  <g filter="url(#sh6)">
+    <path d="M85,320 C120,340 180,348 250,348 C320,348 385,335 415,290 C405,270 380,268 365,280 C320,300 250,300 180,290 C135,285 95,290 85,320 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M88,328 C150,350 250,352 350,340 C385,325 410,298 414,293" stroke="#f59e0b" stroke-width="5" fill="none"/>
+    <path d="M95,300 C90,240 130,190 170,170 C210,150 250,130 280,120 C290,155 305,190 350,225 C390,250 410,270 398,285 C370,295 320,300 250,300 C180,300 125,295 95,300 Z" fill="#1e3a8a"/>
+    <path d="M150,260 C210,270 290,240 350,185 C340,205 310,245 250,270 C200,285 165,275 150,260 Z" fill="#f59e0b"/>
+  </g>
+  <text x="250" y="440" fill="#0f172a" font-family="sans-serif" font-size="18" font-weight="800" text-anchor="middle">GIÀY BÓNG RỔ NIKE PRECISION 6</text>
+  <text x="250" y="465" fill="#d97706" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Đế Vân Xương Cá Bám Sân Outdoor Cực Tốt</text>
+</svg>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPORTS SHOP - 6651071010_LAB1 | Ngô Thuận Dương</title>
+  <meta name="description" content="Website Bán Đồ Thể Thao E-commerce - Bài Thực Hành LAB 1-2 môn Thiết Kế Web - GV: Nguyễn Thiện Dương - SV: Ngô Thuận Dương - MSSV: 6651071010" />
+
+  <!-- Google Font: Cairo & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Organi Stylesheet -->
+  <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row" style="align-items: center;">
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__left">
+              <ul>
+                <li><i class="fa-solid fa-envelope"></i> ngothuanduong.6651071010@utc.edu.vn</li>
+                <li><i class="fa-solid fa-truck-fast"></i> Miễn phí vận chuyển cho đơn hàng từ 200.000 ₫</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="header__top__right">
+              <div class="header__top__right__social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="shoping-cart.html"><i class="fa-solid fa-user"></i> Ngô Thuận Dương (6651071010)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="container" style="padding-top: 20px;">
+      <div class="row" style="align-items: center;">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="index.html">
+              <i class="fa-solid fa-bolt"></i>
+              <span>SPORTS</span>SHOP
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li class="active"><a href="index.html">Trang Chủ</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li>
+                <a href="#">Trang <i class="fa-solid fa-angle-down" style="font-size: 11px;"></i></a>
+                <ul class="header__menu__dropdown">
+                  <li><a href="shop-details.html">Chi Tiết Sản Phẩm</a></li>
+                  <li><a href="shoping-cart.html">Giỏ Hàng</a></li>
+                  <li><a href="checkout.html">Thanh Toán</a></li>
+                  <li><a href="blog-details.html">Chi Tiết Tin Tức</a></li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Tin Tức</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="shop-grid.html"><i class="fa-solid fa-heart"></i> <span>0</span></a></li>
+              <li><a href="shoping-cart.html"><i class="fa-solid fa-bag-shopping"></i> <span>0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>0 ₫</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <!-- Categories Collapsible Sidebar -->
+        <div class="col-lg-3">
+          <div class="hero__categories">
+            <div class="hero__categories__all">
+              <i class="fa-solid fa-bars"></i>
+              <span>Tất cả danh mục</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul>
+              <li><a href="shop-grid.html?cat=football">Bóng Đá</a></li>
+              <li><a href="shop-grid.html?cat=running">Chạy Bộ</a></li>
+              <li><a href="shop-grid.html?cat=gym">Gym & Fitness</a></li>
+              <li><a href="shop-grid.html?cat=badminton">Cầu Lông</a></li>
+              <li><a href="shop-grid.html?cat=basketball">Bóng Rổ</a></li>
+              <li><a href="shop-grid.html">Quần Áo Thể Thao</a></li>
+              <li><a href="shop-grid.html">Giày Thể Thao Nam/Nữ</a></li>
+              <li><a href="shop-grid.html">Phụ Kiện & Bảo Hộ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Search & Phone & Hero Banner -->
+        <div class="col-lg-9">
+          <div class="hero__search">
+            <div class="hero__search__form">
+              <form action="shop-grid.html" method="GET">
+                <div class="hero__search__categories">
+                  Tất cả môn <i class="fa-solid fa-angle-down" style="font-size: 11px; margin-left: 5px;"></i>
+                </div>
+                <input type="text" name="search" placeholder="Bạn đang tìm giày Nike, áo đấu, vợt cầu lông...?" />
+                <button type="submit" class="site-btn">TÌM KIẾM</button>
+              </form>
+            </div>
+            <div class="hero__search__phone">
+              <div class="hero__search__phone__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="hero__search__phone__text">
+                <h5>0901.234.567</h5>
+                <span>Hỗ trợ tư vấn 24/7</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Main Banner -->
+          <div class="hero__item" style="background-image: linear-gradient(rgba(15,23,42,0.4), rgba(15,23,42,0.6)), url('https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1000&auto=format&fit=crop&q=80');">
+            <div class="hero__text">
+              <span style="color: #60a5fa;">BỘ SƯU TẬP 2026</span>
+              <h2 style="color: #ffffff;">ĐỒ THỂ THAO<br />CHÍNH HÃNG 100%</h2>
+              <p style="color: #e2e8f0;">Đổi trả miễn phí 30 ngày - Giao hàng hỏa tốc trong 2 giờ</p>
+              <a href="shop-grid.html" class="primary-btn">MUA NGAY (SHOP NOW)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CATEGORIES CAROUSEL/GRID ==================== -->
+  <section class="categories">
+    <div class="container">
+      <div class="row">
+        <div class="categories__slider" style="width: 100%;">
+          <div class="categories__item" style="background-image: url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&auto=format&fit=crop&q=80');">
+            <h5><a href="shop-grid.html?cat=football">BÓNG ĐÁ</a></h5>
+          </div>
+          <div class="categories__item" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&auto=format&fit=crop&q=80');">
+            <h5><a href="shop-grid.html?cat=running">CHẠY BỘ</a></h5>
+          </div>
+          <div class="categories__item" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80');">
+            <h5><a href="shop-grid.html?cat=gym">GYM & FITNESS</a></h5>
+          </div>
+          <div class="categories__item" style="background-image: url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&auto=format&fit=crop&q=80');">
+            <h5><a href="shop-grid.html?cat=badminton">CẦU LÔNG</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PRODUCTS (Organi Filter Tabs) ==================== -->
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h2>Sản Phẩm Nổi Bật</h2>
+          </div>
+          <div class="featured__controls">
+            <ul>
+              <li class="active" data-filter="*">Tất Cả</li>
+              <li data-filter=".football">Bóng Đá</li>
+              <li data-filter=".running">Chạy Bộ</li>
+              <li data-filter=".gym">Gym & Fitness</li>
+              <li data-filter=".badminton">Cầu Lông</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="row featured__filter">
+        <!-- 1. Nike Pegasus 40 (running) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 running">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80'), url('Images/product-1.svg');" onclick="window.location.href='shop-details.html?id=1'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(1)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=1" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(1)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=1">Giày Chạy Bộ Nike Pegasus 40</a></h6>
+              <h5>3.290.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Real Madrid Kit (football) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 football">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&auto=format&fit=crop&q=80'), url('Images/product-2.svg');" onclick="window.location.href='shop-details.html?id=2'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(2)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=2" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(2)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=2">Áo Đấu CLB Real Madrid 2024/25</a></h6>
+              <h5>1.850.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Ultraboost Light (running) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 running">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=600&auto=format&fit=crop&q=80'), url('Images/product-3.svg');" onclick="window.location.href='shop-details.html?id=3'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(3)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=3" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(3)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=3">Giày Adidas Ultraboost Light 23</a></h6>
+              <h5>3.600.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Yonex Astrox 88D (badminton) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 badminton">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1613918108466-292b78a8ef95?w=600&auto=format&fit=crop&q=80'), url('Images/product-4.svg');" onclick="window.location.href='shop-details.html?id=4'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(4)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=4" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(4)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=4">Vợt Yonex Astrox 88D Pro</a></h6>
+              <h5>3.950.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Under Armour Tank (gym) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 gym">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&auto=format&fit=crop&q=80'), url('Images/product-5.svg');" onclick="window.location.href='shop-details.html?id=5'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(5)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=5" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(5)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=5">Áo Ba Lỗ Tập Gym Under Armour</a></h6>
+              <h5>550.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Nike Precision 6 (basketball) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 basketball">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=600&auto=format&fit=crop&q=80'), url('Images/product-6.svg');" onclick="window.location.href='shop-details.html?id=6'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(6)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=6" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(6)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=6">Giày Bóng Rổ Nike Precision 6</a></h6>
+              <h5>1.990.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Mercurial Vapor 15 (football) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 football">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&auto=format&fit=crop&q=80'), url('Images/product-7.svg');" onclick="window.location.href='shop-details.html?id=7'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(7)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=7" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(7)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=7">Giày Đá Banh Nike Mercurial TF</a></h6>
+              <h5>2.190.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Puma Ultraweave (running) -->
+        <div class="col-lg-3 col-md-4 col-sm-6 running">
+          <div class="featured__item">
+            <div class="featured__item__pic" style="background-image: url('https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop&q=80'), url('Images/product-8.svg');" onclick="window.location.href='shop-details.html?id=8'">
+              <ul class="featured__item__pic__hover" onclick="event.stopPropagation()">
+                <li><a href="javascript:void(0)" onclick="toggleWishlist(8)" title="Yêu thích"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="shop-details.html?id=8" title="Xem chi tiết"><i class="fa-solid fa-retweet"></i></a></li>
+                <li><a href="javascript:void(0)" onclick="addToCart(8)" title="Thêm vào giỏ"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </div>
+            <div class="featured__item__text">
+              <h6><a href="shop-details.html?id=8">Quần Chạy Bộ 2 Lớp Puma Ultra</a></h6>
+              <h5>790.000 ₫</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER SECTION (2 Ads side by side) ==================== -->
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="banner__pic" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=80');">
+            <div class="banner__text">
+              <h4>GIÀY CHẠY BỘ NIKE</h4>
+              <p>Giảm đến 30% bộ sưu tập hè 2026</p>
+              <a href="shop-grid.html?cat=running" class="primary-btn">XEM NGAY</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="banner__pic" style="background-image: url('https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=700&auto=format&fit=crop&q=80');">
+            <div class="banner__text">
+              <h4>ÁO ĐẤU CLB MỚI NHẤT</h4>
+              <p>Chính hãng Real Madrid, Man City, Arsenal</p>
+              <a href="shop-grid.html?cat=football" class="primary-btn">XEM NGAY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LATEST PRODUCTS (3 Columns) ==================== -->
+  <section class="latest-product">
+    <div class="container">
+      <div class="row">
+        <!-- Col 1: Sản phẩm mới nhất -->
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-product__text">
+            <h4>Mới Nhất</h4>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=1">Nike Pegasus 40</a></h6>
+                <span>3.290.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=2">Áo Real Madrid 2024</a></h6>
+                <span>1.850.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=3">Adidas Ultraboost</a></h6>
+                <span>3.600.000 ₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Đánh giá cao nhất -->
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-product__text">
+            <h4>Đánh Giá Cao</h4>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=4">Yonex Astrox 88D Pro</a></h6>
+                <span>3.950.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=7">Nike Mercurial Vapor 15</a></h6>
+                <span>2.190.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=5">Áo Gym Under Armour</a></h6>
+                <span>550.000 ₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Review Products -->
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-product__text">
+            <h4>Bán Chạy Nhất</h4>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1552346154-21d32810aba3?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=6">Nike Precision 6</a></h6>
+                <span>1.990.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=8">Quần Chạy Puma 2-in-1</a></h6>
+                <span>790.000 ₫</span>
+              </div>
+            </div>
+            <div class="latest-product__item">
+              <div class="latest-product__item__pic" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200&auto=format&fit=crop&q=80');"></div>
+              <div class="latest-product__item__text">
+                <h6><a href="shop-details.html?id=1">Nike Pegasus 40 Đỏ</a></h6>
+                <span>3.290.000 ₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FROM THE BLOG SECTION ==================== -->
+  <section class="from-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title from-blog__title">
+            <h2>Tin Tức Thể Thao</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="blog__item">
+            <div class="blog__item__pic">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&auto=format&fit=crop&q=80" alt="Blog 1">
+            </div>
+            <div class="blog__item__text">
+              <ul>
+                <li><i class="fa-regular fa-calendar"></i> 27/10/2026</li>
+                <li><i class="fa-regular fa-comment"></i> 5 bình luận</li>
+              </ul>
+              <h5><a href="blog-details.html">5 Mẹo Chọn Giày Chạy Bộ Phù Hợp Bàn Chân</a></h5>
+              <p>Hướng dẫn chi tiết cách kiểm tra bàn chân sấp hay ngửa để chọn đệm giày phù hợp nhất khi chạy cự ly dài.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="blog__item">
+            <div class="blog__item__pic">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=80" alt="Blog 2">
+            </div>
+            <div class="blog__item__text">
+              <ul>
+                <li><i class="fa-regular fa-calendar"></i> 25/10/2026</li>
+                <li><i class="fa-regular fa-comment"></i> 8 bình luận</li>
+              </ul>
+              <h5><a href="blog-details.html">Lịch Tập Gym Tăng Cơ Cho Người Mới Bắt Đầu</a></h5>
+              <p>Giáo án đẩy kéo chân (Push-Pull-Legs) khoa học giúp phát triển cơ bắp toàn diện và hạn chế tối đa chấn thương.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="blog__item">
+            <div class="blog__item__pic">
+              <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=500&auto=format&fit=crop&q=80" alt="Blog 3">
+            </div>
+            <div class="blog__item__text">
+              <ul>
+                <li><i class="fa-regular fa-calendar"></i> 20/10/2026</li>
+                <li><i class="fa-regular fa-comment"></i> 12 bình luận</li>
+              </ul>
+              <h5><a href="blog-details.html">Kỹ Thuật Đập Cầu Lông Uy Lực Chuẩn VĐV</a></h5>
+              <p>Bật nhảy smash cầu cắm sân với điểm tiếp xúc cao nhất, tối ưu lực cổ tay và chuyển trọng tâm cơ thể.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="index.html" style="font-size: 26px; font-weight: 900; color: #1c1c1c;">
+                <i class="fa-solid fa-bolt" style="color: var(--primary);"></i>
+                <span style="color: var(--primary);">SPORTS</span>SHOP
+              </a>
+            </div>
+            <ul>
+              <li>Địa chỉ: Tòa nhà Thể Thao Pro, Quận 1, TP.HCM</li>
+              <li>Hotline: 0901.234.567</li>
+              <li>Email: ngothuanduong.6651071010@utc.edu.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Liên Kết Hữu Ích</h6>
+            <ul>
+              <li><a href="shop-grid.html">Về Chúng Tôi</a></li>
+              <li><a href="shop-grid.html">Cửa Hàng</a></li>
+              <li><a href="shop-grid.html">Mua Sắm An Toàn</a></li>
+              <li><a href="contact.html">Thông Tin Giao Hàng</a></li>
+              <li><a href="contact.html">Chính Sách Bảo Mật</a></li>
+              <li><a href="contact.html">Sơ Đồ Trang Web</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Đăng Ký Nhận Bản Tin Khuyến Mãi</h6>
+            <p>Nhận ngay voucher giảm giá 10% cho đơn hàng đầu tiên của bạn.</p>
+            <form onsubmit="alert('Cảm ơn bạn đã đăng ký nhận tin khuyến mãi!'); return false;">
+              <input type="email" placeholder="Nhập email của bạn..." required>
+              <button type="submit" class="site-btn">ĐĂNG KÝ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div>
+              Copyright &copy; 2026 All rights reserved | <strong>Bài Thực Hành Buổi 1-2 môn Thiết Kế Web</strong> - GV: <strong>Nguyễn Thiện Dương</strong>
+            </div>
+            <div>
+              Sinh viên thực hiện: <strong>Ngô Thuận Dương</strong> - MSSV: <strong>6651071010</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="Scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
+    <filter id="sh8" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg8)" rx="16"/>
+  <ellipse cx="250" cy="415" rx="140" ry="18" fill="#94a3b8" opacity="0.4"/>
+  <g filter="url(#sh8)">
+    <path d="M160,140 L340,140 C345,140 350,145 350,155 L350,180 L150,180 L150,155 C150,145 155,140 160,140 Z" fill="#1e293b"/>
+    <line x1="250" y1="155" x2="240" y2="195" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <line x1="250" y1="155" x2="260" y2="195" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M155,270 L150,360 L235,360 L245,290" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <path d="M345,270 L350,360 L265,360 L255,290" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <path d="M150,180 L350,180 L365,310 L260,310 L250,250 L240,310 L135,310 Z" fill="#334155" stroke="#1e293b" stroke-width="2"/>
+    <path d="M175,280 C180,270 190,265 195,270 C190,275 185,282 175,280 Z" fill="#f59e0b"/>
+  </g>
+  <text x="250" y="445" fill="#0f172a" font-family="sans-serif" font-size="18" font-weight="800" text-anchor="middle">QUẦN CHẠY BỘ 2 LỚP PUMA ULTRAWEAVE</text>
+  <text x="250" y="470" fill="#475569" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Thiết Kế 2 Lớp Chống Cọ Rát Đùi - Túi Zip Sau</text>
+</svg>

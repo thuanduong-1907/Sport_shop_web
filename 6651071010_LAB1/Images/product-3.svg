@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
+    <linearGradient id="boostSole" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
+    <filter id="sh3" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity="0.15"/></filter>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg3)" rx="16"/>
+  <ellipse cx="250" cy="380" rx="160" ry="22" fill="#94a3b8" opacity="0.4"/>
+  <g filter="url(#sh3)">
+    <path d="M85,325 C120,340 180,350 250,350 C325,350 385,335 415,290 C405,275 385,272 370,285 C320,305 250,305 180,295 C135,290 95,295 85,325 Z" fill="url(#boostSole)" stroke="#cbd5e1" stroke-width="2"/>
+    <path d="M88,335 C150,355 250,355 350,342 C385,325 410,298 414,293" stroke="#10b981" stroke-width="4" fill="none"/>
+    <path d="M95,305 C90,265 125,225 165,205 C205,185 245,150 275,145 C285,175 300,205 345,235 C385,255 410,275 398,290 C370,300 320,305 250,305 C180,305 125,300 95,305 Z" fill="#0f172a"/>
+    <polygon points="240,210 252,210 275,285 263,285" fill="#ffffff" opacity="0.9"/>
+    <polygon points="260,205 272,205 295,285 283,285" fill="#ffffff" opacity="0.9"/>
+    <polygon points="280,200 292,200 315,285 303,285" fill="#ffffff" opacity="0.9"/>
+    <path d="M110,280 C110,250 135,245 155,255 C155,285 130,295 110,280 Z" fill="#3b82f6"/>
+  </g>
+  <text x="250" y="440" fill="#0f172a" font-family="sans-serif" font-size="18" font-weight="800" text-anchor="middle">ADIDAS ULTRABOOST LIGHT 23</text>
+  <text x="250" y="465" fill="#64748b" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Đệm Hạt Light BOOST Siêu Êm</text>
+</svg>
